@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-img = cv2.imread('test1.jpg', 0)
+img = cv2.imread('test1.jpg', 1)
 # global thresholding
 ret1, th1 = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
 # Otsu's thresholding
