@@ -16,7 +16,7 @@ writer = cv2.VideoWriter('test.avi',fourcc, 30, (int(cap.get(cv2.CAP_PROP_FRAME_
 while cap.isOpened():
     ret, frame = cap.read()
     if ret:
-         writer.write(frame)
+        #  writer.write(frame)
          cv2.imshow("Frame",frame)
          # Exit on pressing esc
          if cv2.waitKey(20) & 0xFF == 27:
