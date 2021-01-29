@@ -3,13 +3,16 @@ import numpy as np
 cap=cv2.VideoCapture(0)
 while(1):
 #获取每一帧 
-    ret,frame=cap.read()
-        
+    ret,frame=cap.read()        
 #换到HSV 
     hsv=cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)
 #定蓝色的值 
-    lower_blue=np.array([50,50,50]) 
-    upper_blue=np.array([130,255,255])
+    lower_blue=np.array([0,50,50]) 
+    upper_blue=np.array([10,255,255])
+
+ cv2.resize    
+
+
 #根据值构建掩模 
     mask=cv2.inRange(hsv,lower_blue,upper_blue)
 #对原图像和掩模位算 
